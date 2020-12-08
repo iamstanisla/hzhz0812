@@ -2,3 +2,9 @@
 venv
 activate_venv.bat
 
+#database
+db.sqlite3
+
+#python cache
+__pycache__
+test_project/__pycache__
