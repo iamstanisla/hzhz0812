@@ -4,6 +4,7 @@ activate_venv.bat
 
 #database
 test_db
+app/migrations
 
 #python cache
 __pycache__
