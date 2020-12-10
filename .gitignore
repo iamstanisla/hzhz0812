@@ -3,7 +3,7 @@ venv
 activate_venv.bat
 
 #database
-db.sqlite3
+test_db
 
 #python cache
 __pycache__
