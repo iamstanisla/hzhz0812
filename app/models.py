@@ -1,7 +1,8 @@
 from django.db import models
-
-# Create your models here.
+from django.db.models import CharField
+from django.db.models import JSONField
 
 
 class DataFields(models.Model):
-	one_filed = models.CharField(max_length=200)
+	name = CharField(max_length=200)
+	about_me = JSONField(default=dict)
