@@ -1,7 +1,8 @@
 from django.contrib import admin
 
 
-from .models import DataFields
+from .models import User
 
 
-admin.site.register(DataFields)
+admin.site.register(User)
+
