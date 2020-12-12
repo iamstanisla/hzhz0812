@@ -1,6 +1,5 @@
 # python envirement
 venv
-activate_venv.bat
 
 #database
 test_db
