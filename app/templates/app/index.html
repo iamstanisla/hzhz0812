@@ -1,0 +1,21 @@
+{% extends 'app/base.html' %}
+{% load static %}
+
+{% block content %}
+<form method='POST' action="" id="userForm">
+
+	<div class="form-group" id="divTemplate">
+		<input class="form-control" type="text"  id="name_1" name="name_1" placeholder="Поле ввода данных....">
+	</div>
+	<div class="divButtons btn-group" role="group" aria-label="Group tools" id="divButtons">
+		<input class="btn btn-outline-success" type="button" id="add" value="Добавить поле">
+		<input class="btn btn-outline-danger" type="button" id="del" value="Отменить">
+		<button class="btn btn-outline-secondary" >Отправить</button>
+	</div>
+
+</form>
+
+{% block scripts %}
+<script type="text/javascript" src="{% static 'app/js/tools.js' %}"></script>
+{% endblock %}
+{% endblock %}
