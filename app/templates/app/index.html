@@ -1,7 +1,13 @@
-{% extends 'app/base.html' %}
+{% extends 'base.html' %}
 {% load static %}
 
+    {% block styles %}
+    {{ block.super }}
+        <link rel="stylesheet" href="{% static 'app/css/style.css ' %}">
+    {% endblock %}
+
 {% block content %}
+	{{ block.super }}
 <form method='POST' action="" id="userForm">
 
 	<div class="form-group" id="divTemplate">
