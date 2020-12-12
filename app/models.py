@@ -4,6 +4,4 @@ from django.db.models import JSONField
 
 
 class User(models.Model):
-	name = CharField(max_length=200)
-	about_me = JSONField(default=dict)
-
+	data_fields = JSONField(default=dict)
