@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+	{{ block.super }}
+	{% for entry in userdata %}
+	<br><br>
+	<div>
+		<h3>Запись номер {{ entry.id }} | количество поле {{ entry.data_fields|length  }}</h3>
+	<ul class="list-group ">
+	{% for key, value_field in entry.data_fields.items %}
+	  	<div>
+  			<div class="input-group mb-3">
+			  <div class="input-group-prepend">
+			    	<span class="input-group-text"> {{ key }} </span>
+			  </div>
+			  <input type="text" class="form-control" value="{{ value_field }}" aria-label="Username" aria-describedby="basic-addon1" readonly>
+			</div>
+	  	</div>
+	{% endfor %}
+	</ul>
+	</div>
+	{% endfor %}
+{% endblock %}
